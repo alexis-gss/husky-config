@@ -1,0 +1,30 @@
+{
+  "name": "alexis-gss-husky-config",
+  "version": "1.0.0",
+  "description": "Shared Husky and commitlint config with auto-setup",
+  "homepage": "https://alexis-gousseau.com/husky-config",
+  "authors": [
+    {
+      "name": "Alexis Gousseau",
+      "homepage": "https://alexis-gousseau.com",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "alexis-gss",
+    "environment"
+  ],
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "husky": "^9.1.7"
+  },
+  "scripts": {
+    "postinstall": "node setup.js && [ -f $INIT_CWD/package.json ] && cd $INIT_CWD && npx husky install || true"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
