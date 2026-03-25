@@ -1,7 +1,7 @@
 {
-  "name": "alexis-gss-husky-config",
-  "version": "1.0.0",
-  "description": "Shared Husky and commitlint config with auto-setup",
+  "name": "@alexis-gss/husky-config",
+  "version": "1.0.2",
+  "description": "Shared Husky and commitlint config with auto-setup.",
   "homepage": "https://alexis-gousseau.com/husky-config",
   "authors": [
     {

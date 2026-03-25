@@ -76,12 +76,12 @@ Hook executed before each commit to validate the commit message:
 ```sh
 #!/bin/sh
 
-npx --no -- commitlint --config node_modules/alexis-gss-husky-config/commitlint.config.cjs --edit $1
+npx --no -- commitlint --config node_modules/@alexis-gss/husky-config/commitlint.config.cjs --edit $1
 ```
 
 - `#!/bin/sh`: indicates shell script interpretation,
 - `npx --no -- commitlint`: runs the commitlint validator,
-- `--config node_modules/alexis-gss-husky-config/commitlint.config.cjs`: uses the package configuration,
+- `--config node_modules/@alexis-gss/husky-config/commitlint.config.cjs`: uses the package configuration,
 - `--edit $1`: validates the commit message (`$1` = message).
 
 ## Behavior

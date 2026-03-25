@@ -16,7 +16,7 @@ try {
   if (!fs.existsSync(commitlintPath)) {
     fs.writeFileSync(
       commitlintPath,
-      `module.exports = require('alexis-gss-husky-config/commitlint.config.cjs');\n`
+      `module.exports = require('@alexis-gss/husky-config/commitlint.config.cjs');\n`
     );
   }
 
@@ -30,7 +30,7 @@ try {
   const commitMsgPath = path.join(huskyDir, 'commit-msg');
   const commitMsgContent = `#!/bin/sh
 
-npx --no -- commitlint --config node_modules/alexis-gss-husky-config/commitlint.config.cjs --edit $1
+npx --no -- commitlint --config node_modules/@alexis-gss/husky-config/commitlint.config.cjs --edit $1
 `;
 
   fs.writeFileSync(commitMsgPath, commitMsgContent);
