@@ -6,7 +6,7 @@ All notable changes to `husky-config` will be documented in this file.
 - This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html),
 - Commits respect [Conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) & use [Gitmoji](https://gitmoji.dev/).
 
-## **[v1.0.0] - 24.03.26**
+## **[v1.0.2] - 25.03.26**
 
 ### Added
 -   feat: 🎉 working package
