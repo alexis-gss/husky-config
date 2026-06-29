@@ -15,14 +15,21 @@
     "environment"
   ],
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
+  "files": [
+    "src/",
+    "commitlint.config.js"
+  ],
+  "bin": {
+    "husky-config": "./src/help.js"
+  },
   "dependencies": {
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "husky": "^9.1.7"
   },
   "scripts": {
-    "postinstall": "node setup.js && [ -f $INIT_CWD/package.json ] && cd $INIT_CWD && npx husky install || true"
+    "postinstall": "node ./src/setup.js"
   },
   "engines": {
     "node": ">=18.0.0"
